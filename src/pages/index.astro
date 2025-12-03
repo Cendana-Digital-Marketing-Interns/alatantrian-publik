@@ -1,0 +1,388 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import Hero from '~/components/widgets/Hero.astro';
+import Brands from '~/components/widgets/Brands.astro';
+import Note from '~/components/widgets/Note.astro';
+import Features from '~/components/widgets/Features.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import Content from '~/components/widgets/Content.astro';
+import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import Stats from '~/components/widgets/Stats.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import Testimonials from '~/components/widgets/Testimonials.astro';
+
+const metadata = {
+  title: 'Tingkatkan Kualitas Layanan Publik Anda dengan Sistem Antrian Digital Terbaik',
+  ignoreTitleTemplate: true,
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Konsultasi Gratis',
+        href: 'https://wa.me/6282150065758?text=Halo%2C%20saya%20mengunjungi%20website%20alatantrian-kesehatan%20dan%20ingin%20konsultasi.',
+        target: '_blank',
+        icon: 'tabler:brand-whatsapp',
+      },
+      { text: 'Kunjungi Web Utama', href: 'https://alatantrian.com' },
+    ]}
+    image={{ src: '~/assets/images/hero-image.png', alt: 'AstroWind Hero Image' }}
+  >
+    <Fragment slot="title">
+      Tingkatkan <span class="hidden xl:inline">Kualitas</span>
+      <span class="text-accent dark:color-secondary"> Layanan Publik </span>Anda dengan Sistem Antrian Digital Terbaik
+
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      Solusi Antrian Digital Terintegrasi: Khusus Dirancang untuk Kantor Pertanahan, Samsat, Dukcapil, Imigrasi, dan Layanan Publik Lainnya. <span
+        class="font-semibold">Bebas Ribet,</span
+      > Pelayanan Cepat & Akurat.
+    </Fragment>
+  </Hero>
+
+  <!-- Brands Widget ******************* -->
+  <Brands
+    title="Solusi Pilihan Instansi Pemerintah untuk Layanan Warga"
+    subtitle="Telah digunakan oleh berbagai Kantor Pertanahan, Samsat, Dukcapil, dan Sentra Pelayanan lainnya di seluruh Indonesia."
+    icons={[]}
+    images={[
+      {
+        src: 'https://upload.wikimedia.org/wikipedia/commons/f/f6/Logo_of_the_Ministry_of_Home_Affairs_of_the_Republic_of_Indonesia.svg',
+        alt: 'Kementrian Dalam Negeri',
+      },
+      {
+        src: 'https://upload.wikimedia.org/wikipedia/commons/0/08/Polri_Logo.svg',
+        alt: 'Polri',
+      },
+      {
+        src: 'https://upload.wikimedia.org/wikipedia/commons/6/65/Logo_Kementerian_Komunikasi_dan_Digital_Republik_Indonesia_%282024%29.svg',
+      },
+      {
+        src: 'https://upload.wikimedia.org/wikipedia/commons/7/70/Logo_Kementerian_Perindustrian_Republik_Indonesia_%282009%29.svg',
+      },
+      {
+        src: 'https://upload.wikimedia.org/wikipedia/commons/f/fa/Logo_Kementerian_Pertahanan_Republik_Indonesia_%282022%29.svg',
+      },
+      {
+        src: 'https://upload.wikimedia.org/wikipedia/commons/d/dc/Pegadaian_logo_%282013%29.svg',
+      },
+      {
+        src: 'https://upload.wikimedia.org/wikipedia/commons/c/c2/Logo_Setneg_RI.svg',
+      },
+      {
+        src: 'https://upload.wikimedia.org/wikipedia/commons/4/4f/Logo_Kementerian_Koperasi_%26_UKM_%282021%29.svg',
+      },
+      {
+        src: 'https://upload.wikimedia.org/wikipedia/commons/2/27/Lambang_Bea_dan_Cukai.svg',
+      },
+      {
+        src: 'https://upload.wikimedia.org/wikipedia/commons/8/8a/Logo_of_the_Ministry_of_Transportation_of_the_Republic_of_Indonesia.svg',
+      },
+      // Tambahkan logo lain di sini nanti
+    ]}
+  />
+  <!-- Note Widget ******************* -->
+
+  <Note title="Filosofi:" description="The digital standard for seamless public flow" />
+
+  <!-- Features Widget *************** -->
+
+  <Features
+    id="fitur"
+    tagline="Keunggulan Utama"
+    title="Mengapa Layanan Publik Perlu Beralih ke Digital?"
+    subtitle="Fitur canggih yang dirancang khusus untuk efisiensi Fasilitas Publik"
+    items={[
+      {
+        title: 'Efisiensi Pelayanan Maksimal',
+        description:
+          'Memangkas waktu tunggu hingga 50% dan mengurangi potensi antrian berulang. Staf fokus melayani, bukan mengelola kerumunan.',
+        icon: 'tabler:rocket',
+      },
+      {
+        title: 'Laporan Kinerja Real-Time',
+        description:
+          'Dilengkapi dashboard pemantauan untuk analisis kinerja frontliner dan evaluasi waktu tunggu di setiap loket/jenis layanan.',
+        icon: 'tabler:report',
+      },
+      {
+        title: 'Integrasi Multi-Channel',
+        description:
+          'Pelanggan dapat mengambil nomor antrian dari mesin touchscreen di lokasi atau secara online melalui website/aplikasi.',
+        icon: 'tabler:device-mobile',
+      },
+      {
+        title: 'Sistem User-Friendly',
+        description:
+          'Antarmuka intuitif untuk petugas maupun masyarakat. Implementasi cepat dan dukungan teknis 24/7.',
+        icon: 'tabler:user-heart',
+      },
+    ]}
+  />
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    isReversed
+    tagline="Hardware Tangguh"
+    title="Hardware Kiosk Elegan & Tahan Banting"
+    items={[
+      {
+        title: 'Unit Kios Antrian (Touchscreen)',
+        description:
+          'Layar kapasitif responsif, printer termal auto-cut berkecepatan tinggi, dan casing kokoh anti-vandalisme.',
+      },
+      {
+        title: 'Layar Informasi Utama',
+        description: 'Monitor LED/LCD besar untuk menampilkan nomor antrian berjalan, running text informasi, dan tayangan promosi/himbauan.',
+      },
+      {
+        title: 'Perangkat Pemanggil (Call Pad)',
+        description: 'Alat pemanggil ergonomis untuk frontliner dengan tombol Recall, Skip, dan Transfer Layanan.',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1579389083046-e3df9c2b3325?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      alt: 'Mesin Antrian Kiosk',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Desain Modern & Customizable</h3>
+      Kami menyediakan paket hardware lengkap yang siap digunakan (Plug-and-Play) dengan desain minimalis namun tangguh, cocok untuk lingkungan publik dengan traffic tinggi.
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <Content
+    isAfterContent
+    items={[
+      {
+        title: 'Modul Layanan Fleksibel',
+        description: `Pengaturan jenis layanan tanpa batas, pembagian user access untuk setiap loket, dan penyesuaian alur kerja layanan (misalnya, dari Pendaftaran > Verifikasi > Pembayaran > Selesai).`,
+      },
+      {
+        title: 'Sistem Panggilan Suara',
+        description:
+          'Panggilan nomor antrian menggunakan suara narasi yang jelas dan otomatis (Text-to-Speech) dalam Bahasa Indonesia.',
+      },
+      {
+        title: 'Dashboard Monitoring',
+        description:
+          'Akses data real-time, laporan harian/bulanan, dan analisis Service Level Agreement (SLA) per loket/layanan.',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1597239450996-ea7c2c564412?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      alt: 'Tampilan Software Antrian',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Software yang Memahami Alur Pelayanan Publik</h3>
+      Jantung dari sistem kami adalah software yang cerdas dan fleksibel. Dirancang untuk menyesuaikan berbagai alur layanan unik di kantor publik Anda.
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Steps Widget ****************** -->
+
+  <Steps
+    title="Bagaimana Cara Implementasinya?"
+    tagline="Alur Kerjasama"
+    items={[
+      {
+        title: 'Langkah 1: Konsultasi & Survey',
+        description:
+          'Tim kami akan berdiskusi dengan IT Instansi Anda untuk memetakan alur antrian dan kebutuhan bridging (Sistem Layanan Instansi / Instansi Teknis). Jika diperlukan, kami lakukan survei lokasi.',
+        icon: 'tabler:messages',
+      },
+      {
+        title: 'Langkah 2: Penawaran & Demo',
+        description:
+          'Kami berikan proposal spesifikasi teknis (bisa untuk E-Katalog) dan melakukan demo produk agar Anda yakin dengan solusinya.',
+        icon: 'tabler:presentation',
+      },
+      {
+        title: 'Langkah 3: Instalasi & Bridging',
+        description:
+          'Pemasangan Kiosk, TV Display, dan instalasi jaringan. Tim programmer kami melakukan konfigurasi hingga status integrasi dengan sistem internal Instansi berstatus "Siap Beroperasi".',
+        icon: 'tabler:tool',
+      },
+      {
+        title: 'Siap Melayani Masyarakat!',
+        icon: 'tabler:check',
+      },
+    ]}
+    image={{
+      src: 'https://plus.unsplash.com/premium_photo-1683120751955-3d7c14887ac8?q=80&w=784&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      alt: 'Teknisi sedang instalasi',
+    }}
+  />
+
+  <!-- Features2 Widget ************** -->
+
+  <Features2
+    title="Layanan Purna Jual & Support"
+    subtitle="Kami tidak hanya menjual alat, tapi menjamin kelancaran operasional pelayanan Publik Anda jangka panjang."
+    tagline="Komitmen Kami"
+    items={[
+      {
+        title: 'Garansi Resmi 1 Tahun',
+        description: 'Jaminan ganti sparepart baru jika terjadi kerusakan manufaktur pada Kiosk, PC, atau Printer.',
+        icon: 'tabler:certificate',
+      },
+      {
+        title: 'Teknisi Ready Visit',
+        description:
+          'Tim teknisi kami siap datang ke lokasi (On-Site) untuk perbaikan jika kendala tidak bisa diselesaikan secara remote.',
+        icon: 'tabler:user-check',
+      },
+      {
+        title: 'Remote Support 24/7',
+        description:
+          'Bantuan teknis via WhatsApp/TeamViewer kapan saja saat terjadi kendala pada software atau jaringan.',
+        icon: 'tabler:headset',
+      },
+      {
+        title: 'Update Software Gratis',
+        description:
+          'Mendapatkan update fitur terbaru dan penyesuaian jika ada perubahan regulasi BPJS (Free Maintenance).',
+        icon: 'tabler:refresh',
+      },
+      {
+        title: 'Sparepart Ready Stock',
+        description: 'Ketersediaan suku cadang (Thermal Paper, Printer Head, Touchscreen) selalu terjamin.',
+        icon: 'tabler:package',
+      },
+      {
+        title: 'Training Petugas',
+        description: 'Pelatihan lengkap untuk admin, perawat, dan IT RS hingga mahir mengoperasikan sistem.',
+        icon: 'tabler:school',
+      },
+    ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Features2>
+
+  <!-- HighlightedPosts Widget ******* -->
+
+  <BlogLatestPosts
+    title="Wawasan & Studi Kasus"
+    information={`Temukan artikel terbaru seputar regulasi Standar Pelayanan Publik, tips penilaian IKM dan Pelayanan Prima, dan studi kasus implementasi digitalisasi di berbagai instansi pemerintah. Edukasi adalah kunci modernisasi layanan publik.`}
+  />
+
+  <!-- Testimonials Widget ******* -->
+
+  <Testimonials
+    title="Kata Mereka Tentang Kami"
+    subtitle="Dengarkan pengalaman langsung dari Kepala Instansi, Kepala Bidang Pelayanan, dan Koordinator IT yang telah menggunakan sistem kami."
+    testimonials={[
+      {
+        testimonial: `Sebelumnya, kami kesulitan mendapatkan data akurat tentang berapa lama masyarakat menunggu di setiap loket. Setelah implementasi Alat Antrian, kami bisa menganalisis kinerja frontliner dan mempercepat flow antrian di Samsat kami secara signifikan.`,
+        name: 'Bpk. Ari',
+        job: 'Kepala Seksi Pelayanan (Samsat)',
+        image: {
+          src: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&h=100&q=80',
+          alt: 'Bpk. Ari',
+        },
+      },
+      {
+        testimonial: `Kami sangat menghargai kemudahan penggunaan sistem ini, baik bagi petugas maupun warga yang datang. Transisi dari sistem manual ke digital di Kantor Pertanahan kami berjalan mulus, dan kini loket lebih tertata rapi.`,
+        name: 'Ibu Maya',
+        job: 'Kepala Sub Bagian Umum (Kantor Pertanahan)',
+        image: {
+          src: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&h=100&q=80',
+          alt: 'Ibu Maya',
+        },
+      },
+      {
+        testimonial: `Panggilan suara otomatis dan layar informasi yang jelas membuat masyarakat tidak lagi bingung mencari loket. Ini mengurangi tingkat stres petugas kami dan secara langsung meningkatkan Indeks Kepuasan Masyarakat (IKM) SPKT.`,
+        name: 'Bpk. Joni',
+        job: 'Kanit Pelayanan (SPKT Polresta)',
+        image: {
+          src: 'https://plus.unsplash.com/premium_photo-1723600929036-568760ef9925?q=80&w=933&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+          alt: 'Bpk. Joni',
+        },
+      },
+    ]}
+  />
+
+  <!-- FAQs Widget ******************* -->
+
+  <FAQs
+    title="Pertanyaan Umum (FAQ)"
+    subtitle="Hal yang sering ditanyakan oleh manajemen Pelayanan Publik sebelum bekerjasama."
+    tagline="Informasi"
+    classes={{ container: 'max-w-6xl' }}
+    items={[
+      {
+        title: 'Apakah sistem ini bisa disesuaikan dengan alur layanan spesifik di kantor kami (misalnya, Samsat atau Dukcapil)?',
+        description:
+          'Ya, software kami dirancang sangat fleksibel. Kami dapat memprogram alur layanan yang kompleks, termasuk integrasi layanan (misalnya, dari loket A pindah ke loket B) sesuai kebutuhan spesifik instansi Anda.',
+      },
+      {
+        title: 'Bagaimana dengan dukungan teknis (support) jika terjadi kendala?',
+        description:
+          'Kami menyediakan garansi hardware dan software. Tim teknis kami siap membantu melalui remote support maupun kunjungan lokasi jika diperlukan untuk memastikan pelayanan publik tidak terganggu.',
+      },
+      {
+        title: 'Apakah sistem antrian ini bisa diintegrasikan dengan website atau aplikasi mobile instansi kami?',
+        description:
+          'Tentu. Sistem kami dilengkapi dengan API yang memungkinkan integrasi mudah untuk online booking nomor antrian, cek real-time sisa antrian, dan notifikasi layanan.',
+      },
+      {
+        title: 'Bagaimana sistem bekerja jika terjadi gangguan internet di kantor layanan?',
+        description:
+          'Aplikasi dapat beroperasi dalam mode offline untuk memastikan proses tiket dan pemanggilan tetap berjalan. Data akan tersinkronisasi otomatis ke server ketika koneksi kembali stabil.',
+      },
+    ]}
+  />
+
+  <!-- Stats Widget ****************** -->
+
+  <Stats
+    stats={[
+      { title: 'Instansi', amount: '500+' },
+      { title: 'Tahun Pengalaman', amount: '10' },
+      { title: 'Jangkauan Kota', amount: '35' },
+      { title: 'Jumlah Masyarakat Terlayani', amount: '10.000+' },
+    ]}
+  />
+
+  <!-- CallToAction Widget *********** -->
+
+  <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Hubungi Kami',
+        href: 'https://wa.me/6282150065758?text=Halo%2C%20saya%20mengunjungi%20website%20alatantrian-kesehatan%20dan%20ingin%20konsultasi.', // Ganti nomor WA
+        target: '_blank',
+        icon: 'tabler:brand-whatsapp',
+      },
+    ]}
+  >
+    <Fragment slot="title"> Siap Meningkatkan Kepuasan Masyarakat? </Fragment>
+
+    <Fragment slot="subtitle">
+      Jangan biarkan antrian lama merusak citra Pelayanan Publik. <br class="hidden md:inline" />
+      Dapatkan proposal penawaran dan demo gratis hari ini.
+    </Fragment>
+  </CallToAction>
+</Layout>
