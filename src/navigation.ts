@@ -85,8 +85,8 @@ export const footerData = {
         { text: 'Retail', href: 'http://alatantrian-retail.vercel.app' },
         { text: 'Perbankan', href: 'http://alatantrian-perbankan.vercel.app' },
         { text: 'Pendidikan', href: 'http://alatantrian-pendidikan.vercel.app' },
-        { text: 'Transportasi', href: 'http://alatantrian-transportasi.vercel.app'},
-        { text: 'Kesehatan', href: 'http://alatantrian-kesehatan.vercel.app'}
+        { text: 'Transportasi', href: 'http://alatantrian-transportasi.vercel.app' },
+        { text: 'Kesehatan', href: 'http://alatantrian-kesehatan.vercel.app' },
       ],
     },
     {
