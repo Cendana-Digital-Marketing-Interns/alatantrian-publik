@@ -11,7 +11,7 @@ metadata:
   title:
     default: 'Solusi Antrian Terintegrasi untuk Layanan Publik'
     template: '%s — Alat Antrian Layanan Publik'
-  description: "🚀 Penyedia mesin antrian kiosk, running text, dan sistem manajemen antrian modern untuk berbagai layanan publik."
+  description: '🚀 Penyedia mesin antrian kiosk, running text, dan sistem manajemen antrian modern untuk berbagai layanan publik.'
   robots:
     index: true
     follow: true
