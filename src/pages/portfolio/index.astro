@@ -6,7 +6,7 @@ import Image from '~/components/common/Image.astro';
 import { getCollection } from 'astro:content';
 
 const metadata = {
-  title: 'Portofolio Klien Alat Antrian Kesehatan',
+  title: 'Portofolio Klien Alat Antrian Layanan Publik',
 };
 
 const portfolios = await getCollection('portfolio');
@@ -18,7 +18,7 @@ console.log('DATA PORTOFOLIO:', JSON.stringify(portfolios, null, 2));
   <section class="page-header py-12 md:py-20 bg-blue-50 dark:bg-slate-800">
     <Headline
       title="Klien Kepercayaan Kami"
-      subtitle="Lihat bagaimana kami membantu berbagai Rumah Sakit dan Faskes meningkatkan efisiensi pelayanan mereka."
+      subtitle="Lihat bagaimana kami membantu berbagai Layanan Publik meningkatkan efisiensi pelayanan mereka."
     />
   </section>
 

@@ -1,14 +1,14 @@
 ---
-title: 'Software Antrian RS & Bridging BPJS'
-description: 'Sistem antrian cerdas yang terintegrasi penuh dengan Mobile JKN, V-Claim BPJS, dan Fingerprint untuk efisiensi pendaftaran pasien JKN.'
+title: 'Software Antrian Layanan Publik'
+description: 'Sistem antrian cerdas yang terintegrasi dengan berbagai aplikasi internal instansi untuk mempercepat pelayanan masyarakat.'
 image: '~/assets/images/hero-image.png'
 category: 'Software'
 price: 'Hubungi Sales'
 productType: 'product'
 features:
-  - 'Bridging Mobile JKN (Check-in Online)'
-  - 'Bridging V-Claim (SEP Otomatis)'
-  - 'Support Fingerprint BPJS'
+  - 'Check-in Mandiri (Kiosk / Mobile / QR Code)'
+  - 'Integrasi Sistem Internal Instansi'
+  - 'Validasi Data Warga'
   - 'Dashboard Monitoring Real-time'
   - 'Notifikasi Panggilan Suara Manusia'
 metadata:
@@ -17,11 +17,12 @@ metadata:
 
 ## Integrasi Tanpa Hambatan
 
-Software kami dirancang khusus untuk memenuhi standar **BPJS Kesehatan**. Membantu Rumah Sakit Anda lolos kredensial dan meningkatkan skor kepuasan pasien.
+Software kami dirancang untuk mendukung digitalisasi **layanan publik.**
+Membantu instansi meningkatkan kualitas pelayanan dan efisiensi operasional.
 
 ### Fitur Utama
 
-1.  **Check-in Mandiri:** Pasien yang daftar via Mobile JKN bisa langsung _check-in_ di Kiosk atau Android tanpa ke loket.
-2.  **Cetak SEP Otomatis:** Data antrian terhubung dengan V-Claim, mempercepat penerbitan SEP.
-3.  **Anti-Fraud:** Terintegrasi dengan validasi Fingerprint untuk mencegah penyalahgunaan kartu BPJS.
+1.  **Check-in Mandiri:** Warga dapat check-in melalui Kiosk, aplikasi mobile, atau QR Code tanpa perlu antre di loket awal.
+2.  **Pemanggilan Otomatis:** Nomor antrian dipanggil otomatis melalui speaker dengan suara natural manusia.
+3.  **Validasi Data:** Terintegrasi dengan sistem internal untuk memvalidasi data warga instansi secara cepat dan akurat.
 4.  **Multi-Platform:** Berbasis Web (bisa dibuka di Windows, Linux, Android, Mac).

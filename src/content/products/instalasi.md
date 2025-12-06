@@ -10,9 +10,9 @@ features:
   - 'Pemasangan Kiosk & Bracket TV'
   - 'Konfigurasi IP & Mikrotik'
   - 'Deploy Software Server'
-  - 'Bridging SIMRS & BPJS'
+  - 'Integrasi Sistem Internal Instansi'
 metadata:
-  title: 'Jasa Instalasi Mesin Antrian RS'
+  title: 'Jasa Instalasi Mesin Antrian'
 ---
 
 ## Lingkup Pekerjaan
@@ -21,7 +21,7 @@ Tim teknisi kami akan menangani seluruh proses instalasi fisik dan digital di lo
 
 1.  **Pemasangan Hardware:** Perakitan Kiosk, pemasangan Bracket TV, dan penarikan kabel LAN/HDMI.
 2.  **Konfigurasi Jaringan:** Setup IP Address statis, konfigurasi Mikrotik (jika ada), dan tes koneksi server lokal.
-3.  **Instalasi Software:** Deploy aplikasi antrian di server lokal RS atau Cloud.
-4.  **Bridging System:** Koneksi API antara mesin antrian dengan SIMRS dan V-Claim BPJS.
+3.  **Instalasi Software:** Deploy aplikasi antrian di server lokal atau cloud instansi.
+4.  **Bridging System:** Sinkronisasi data antara mesin antrian dengan aplikasi internal layanan publik
 
-Kami menjamin instalasi yang rapi, aman (electrical safety), dan sesuai standar estetika Rumah Sakit.
+Kami menjamin instalasi yang rapi, aman (electrical safety), dan sesuai standar estetika perkantoran layanan publik.
