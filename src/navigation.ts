@@ -9,11 +9,11 @@ export const headerData = {
         // Kelompok Produk
         {
           text: 'Hardware Kiosk',
-          href: getPermalink('/products/kiosk-rs'), // Pastikan slug sesuai nama file md
+          href: getPermalink('/products/kiosk'), // Pastikan slug sesuai nama file md
         },
         {
           text: 'Software',
-          href: getPermalink('/products/software-bpjs'),
+          href: getPermalink('/products/software'),
         },
         // Kelompok Layanan (Urutan di bawah produk)
         {
